@@ -8,6 +8,9 @@ Este repositório contém a validação computacional da hipótese de Viagem no 
 ![Physics](https://img.shields.io/badge/Entropic-Gravity-blue)
 ![Topology](https://img.shields.io/badge/Manifold-Non--Orientable-orange)
 
+> **[📄 CLIQUE AQUI PARA LER O RELATÓRIO COMPLETO (WEB)](https://mobius-tardis.vercel.app/)**
+> *Acesse provas matemáticas, gráficos interativos e o protocolo unificado.*
+
 ---
 
 ## 1. Visão Geral do Problema
@@ -84,6 +87,13 @@ Inversão de Quiralidade: -1 (Invertido)
 > O viajante retornou à coordenada inicial, mas 'invertido'.
 > Isso representa a chegada a uma LINHA DO TEMPO PARALELA.
 ```
+
+### Novos Resultados (Fase 2)
+
+Além da ramificação, nossas simulações avançadas (`mobius_lab.py`) confirmaram:
+
+1. **Ressonância:** A viagem só é possível se sintonizada em harmônicos de $\Omega = 117.038$.
+2. **Limite de Bagagem:** Existe uma Massa Crítica (~625 unidades). Acima disso, o túnel colapsa.
 
 ## 5. Conclusão Científica
 
