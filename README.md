@@ -94,6 +94,8 @@ Além da ramificação, nossas simulações avançadas (`mobius_lab.py`) confirm
 
 1. **Ressonância:** A viagem só é possível se sintonizada em harmônicos de $\Omega = 117.038$.
 2. **Limite de Bagagem:** Existe uma Massa Crítica (~625 unidades). Acima disso, o túnel colapsa.
+3. **Telefone Temporal (Fase 4):** Matéria morre, mas *Dados* sobrevivem. Podemos enviar mensagens para outros ramos.
+4. **Teste de Realidade (Fase 4):** Podemos medir o "ruído entrópico" para saber se vivemos no Universo Original ou numa Cópia.
 
 ## 5. Conclusão Científica
 
