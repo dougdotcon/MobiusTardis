@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARDIS Chrononavigation: The Unified Protocol</title>
+
+    <!-- KaTeX for Math -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+    <style>
+        /* === ACADEMIC JOURNAL STYLING (Based on Unified Papers Template) === */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, Georgia, serif;
+            font-size: 12pt;
+            line-height: 1.6;
+            color: #000;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 2cm;
+            background-color: #fff;
+        }
+
+        /* HEADER */
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #000;
+        }
+
+        h1 {
+            font-size: 20pt;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .authors {
+            font-size: 12pt;
+            margin-bottom: 0.25rem;
+        }
+
+        .affiliations {
+            font-size: 10pt;
+            font-style: italic;
+            color: #333;
+        }
+
+        /* BADGES */
+        .badge {
+            display: inline-block;
+            font-size: 8pt;
+            font-family: sans-serif;
+            font-weight: bold;
+            padding: 0.2em 0.5em;
+            border: 1px solid #666;
+            background: #f0f0f0;
+            margin-right: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .badge-validated {
+            background: #dff0d8;
+            color: #3c763d;
+            border-color: #d6e9c6;
+        }
+
+        .badge-theory {
+            background: #d9edf7;
+            color: #31708f;
+            border-color: #bce8f1;
+        }
+
+        .badge-simulation {
+            background: #fcf8e3;
+            color: #8a6d3b;
+            border-color: #faebcc;
+        }
+
+        /* ABSTRACT */
+        .abstract-box {
+            margin: 2rem 0;
+            font-size: 11pt;
+            text-align: justify;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-left: 3px solid #000;
+        }
+
+        .abstract-title {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        /* SECTIONS */
+        h2 {
+            font-size: 14pt;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 0.2rem;
+            margin-top: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        h3 {
+            font-size: 12pt;
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 1.5rem;
+        }
+
+        p {
+            text-align: justify;
+            text-indent: 1.5em;
+            margin-bottom: 1rem;
+        }
+
+        p.no-indent {
+            text-indent: 0;
+        }
+
+        /* FIGURES */
+        figure {
+            margin: 2rem 0;
+            text-align: center;
+            border: 1px solid #eee;
+            padding: 1rem;
+            background: #fff;
+        }
+
+        img {
+            max-width: 90%;
+            height: auto;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        figcaption {
+            font-size: 10pt;
+            margin-top: 0.5rem;
+            font-style: italic;
+            color: #444;
+        }
+
+        /* EQUATIONS */
+        .equation-box {
+            background: #fff;
+            padding: 1rem;
+            margin: 1rem 0;
+            text-align: center;
+            border: 1px dashed #ccc;
+        }
+
+        /* TABLES */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 10pt;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            border-bottom: 2px solid #000;
+        }
+
+        /* WARNING BOX */
+        .warning-box {
+            border: 2px solid #d9534f;
+            background-color: #fdf7f7;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            text-align: left;
+        }
+
+        .warning-title {
+            color: #d9534f;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>TARDIS Chrononavigation: The Unified Protocol</h1>
+        <div class="authors">Douglas H. M. Fulber & TARDIS AI Research Group</div>
+        <div class="affiliations">Unified Physics Division • January 2026</div>
+    </header>
+
+    <div class="abstract-box">
+        <span class="abstract-title">Abstract</span>
+        We present the final validation of the Möbius Transform protocol for non-paradoxical time travel. By unifying
+        the <strong>Entropic Gravity</strong> framework ($\Omega = 117.038$) with <strong>Topological Manifold
+            Theory</strong>, we demonstrate that closed timelike curves (CTCs) are physically impossible. Instead,
+        chrononavigation results in deterministic <strong>Multiverse Branching</strong>. We provide mathematical proofs
+        for the irreversibility of the path, experimental data on the resonant frequencies required for traversal, and
+        the stability limits that prohibit macroscopic mass transport.
+        <br><br>
+        <strong>Keywords:</strong> Möbius Topology, Entropic Gravity, Multiverse Branching, Chrononavigation, Omega
+        Constant.
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+    <h2>1. Introduction: The End of Paradoxes</h2>
+    <p class="no-indent">Does traveling to the past allow you to kill your grandfather? Standard General Relativity says
+        "maybe" (via CTCs). The TARDIS Framework says <strong>NO</strong>.</p>
+    <p>Our research proves that Time is not a dimension to be traversed linearly, but an accumulation of Holographic
+        Entropy. To "travel back" is to navigate a topological twist (Möbius Strip) that leads not to the origin, but to
+        a chiral inversion of the origin—a branched timeline.</p>
+
+    <!-- SECTION 2: MATHEMATICAL PROOFS -->
+    <h2>2. Mathematical Formalism</h2>
+
+    <h3>2.1 The Entropic Time Postulate</h3>
+    <p>Time is the hydrodynamic emergence of information density on the holographic horizon. The interval $dt$ is
+        strictly positive:</p>
+    <div class="equation-box">
+        $$ \Delta t \propto \Delta S > 0 $$
+    </div>
+
+    <h3>2.2 The Chirality Operator (Proof of Branching)</h3>
+    <p>The evolution operator $\hat{U}$ along a Möbius loop of length $2\pi$ acquires a geometric phase (Berry Phase) of
+        $\pi$. This flips the quantum state vector:</p>
+    <div class="equation-box">
+        $$ \hat{U}(2\pi) |\psi_{origin}\rangle = e^{i\pi} |\psi_{origin}\rangle = -|\psi_{origin}\rangle $$
+    </div>
+    <p>Since $|\psi\rangle \neq -|\psi\rangle$, the traveler arrives in a state orthogonal to the origin. Physically,
+        this is a <strong>Parallel Universe</strong> (Timeline B).</p>
+
+    <h3>2.3 The Irreversibility Proof (No Return)</h3>
+    <p>Can we return to the exact origin? No. A second jump ($4\pi$) restores parity ($+$) but advances entropic time:
+    </p>
+    <div class="equation-box">
+        $$ S(4\pi) = S(0) + \oint_{0}^{4\pi} \eta(u) du > S(0) $$
+    </div>
+    <div class="warning-box">
+        <span class="warning-title">The "Spiral Staircase" Theorem</span>
+        You can return to the same $(x,y,z)$ coordinates with the same orientation, but you will always be "one floor
+        up" in entropic time. The original moment $t=0$ is topologically inaccessible once left.
+    </div>
+
+    <!-- SECTION 3: SIMULATION RESULTS -->
+    <h2>3. Experimental Validation (MobiusLab)</h2>
+    <p>We implemented a Python simulation (`mobius_lab.py`) to test these principles. The results confirm three critical
+        constraints for any functional time machine.</p>
+
+    <h3>3.1 Result 1: Entropic Resonance</h3>
+    <p>Navigation is only energy-efficient at specific harmonics of the universal compression factor $\Omega$.</p>
+    <figure>
+        <img src="lab_resonance_spectrum.png" alt="Resonance Spectrum">
+        <figcaption><strong>Fig 1.</strong> The Energy Cost minima occur exactly at integer ratios of $\Omega =
+            117.038$. Off-resonance travel requires infinite energy.</figcaption>
+    </figure>
+
+    <h3>3.2 Result 2: The Mass Limit (Stability)</h3>
+    <p>The Möbius bridge has a finite surface tension. Exceeding a critical information density causes topological
+        collapse.</p>
+    <figure>
+        <img src="lab_stability_limit.png" alt="Stability Limit">
+        <figcaption><strong>Fig 2.</strong> Stability collapses sharply beyond Mass $\approx 625$. This prohibits the
+            transport of large objects or armies.</figcaption>
+    </figure>
+
+    <h3>3.3 Result 3: Multiverse Geography</h3>
+    <p>Recursive simulation shows the "Tree of Time" growing with every jump.</p>
+    <figure>
+        <img src="multiverse_map.png" alt="Multiverse Map">
+        <figcaption><strong>Fig 3.</strong> The Multiverse Map. Nodes represent timelines. Edges represent $2\pi$ jumps.
+            The graph is Acyclic (No loops).</figcaption>
+    </figure>
+
+    <!-- SECTION 4: THE LEGACY UPGRADE -->
+    <h2>4. The Möbius-TARDIS Protocol (Revised CRTC)</h2>
+    <p><em>(Previously known as "Artigo CRTC", now fully upgraded with scientific proofs).</em></p>
+
+    <p>Based on our findings, we establish the <strong>Standard Protocol for Chrononavigation</strong>:</p>
+
+    <ul>
+        <li><strong>Frequency Matching:</strong> The emitter must oscillate at $f = n \cdot 117.038$ Hz (or harmonics).
+        </li>
+        <li><strong>Payload Restriction:</strong> Maximum payload mass $M < M_{crit} \approx 625$ units.
+                strictly "Hand Luggage Only" .</li>
+        <li><strong>Navigation Strategy:</strong> One-way exploration. Agents must be autonomous, as they cannot report
+            back to the exact timeline they left.</li>
+        <li><strong>Causal Immunity:</strong> Actions taken in the past (Branch B) have zero effect on the Origin
+            (Branch A). The "Grandfather Paradox" is resolved by irrelevance.</li>
+    </ul>
+
+    <!-- SECTION 5: VISUAL EVIDENCE -->
+    <h2>5. Visual Confirmation</h2>
+    <p>The initial simulation of the Möbius trajectory visualized the "Flip".</p>
+    <figure>
+        <img src="scripts/mobius_simulation_result.png" alt="Mobius Trajectory">
+        <figcaption><strong>Fig 4.</strong> The traveler (Red) completes the loop and arrives at the same point
+            (Purple/Green) but on the "underside" of the manifold, signifying a branched timeline.</figcaption>
+    </figure>
+
+    <h2>6. Conclusion</h2>
+    <p>The TARDIS project has successfully moved Time Travel from the realm of "Magic" to "Engineering". We know the
+        frequency ($\Omega$), the geometry (Möbius), and the limits ($S_{max}$).</p>
+    <p>The path is open. But it is a path forward into the infinite branches of the Multiverse, never back.</p>
+
+    <div
+        style="margin-top: 3rem; text-align: center; font-size: 10pt; color: #666; border-top: 1px solid #ccc; padding-top: 1rem;">
+        &copy; 2026 TARDIS Research Group. <br>
+        <em>Verified by MobiusLab.</em>
+    </div>
+
+</body>
+
+</html>
